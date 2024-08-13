@@ -53,12 +53,13 @@ main {
 #pokemon-container {
   margin-top: 10px;
 }
-#name-container {
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 p {
+  font-size: 1.4rem;
   font-family: Helvetica;
   margin-left: 5px;
 }
@@ -66,7 +67,37 @@ p {
   font-weight: bold;
   font-size: 1.7rem;
 }
+#pokemon-id {
+  font-size: 1.7rem;
+}
 #sprite {
   width: 400px;
   height: auto;
+}
+.types {
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#stats-table {
+  width: 100%;
+  margin: 0 auto;
+}
+tr {
+  width: 360px;
+}
+#header-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+th {
+  font-family: Helvetica;
+  font-size: 1.5rem;
+}
+td {
+  position: relative;
+  left: 85px;
+}
+.number-stat {
+  left: -130px;
 }
