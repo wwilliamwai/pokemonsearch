@@ -104,4 +104,3 @@ searchInput.addEventListener("keydown", (event) => {
   }
 }); 
 searchInput.addEventListener("change", resetPokemon);
-
