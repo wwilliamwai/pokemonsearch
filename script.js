@@ -98,7 +98,7 @@ searchBtn.addEventListener("click", () => {
   updatePokemon();
 }); 
 searchInput.addEventListener("keydown", (event) => {
-  if (event.key === 'Enter') {
+  if (event.key === 'Enter' && searchBtn.disabled === false) {
   resetPokemon();
   updatePokemon();
   }
