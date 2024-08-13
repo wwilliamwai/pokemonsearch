@@ -51,7 +51,7 @@ main {
   background-color: #FFF0F5;
 }
 #pokemon-container {
-  margin: 10px auto 0;
+  margin-top: 10px;
 }
 .row {
   display: flex;
