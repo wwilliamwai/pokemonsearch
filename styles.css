@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url('https://wallpapercave.com/wp/wp1902707.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+header {
+  width: 500px;
+  height: 120px;
+  margin: 20px auto 0;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 1.5rem;
+  background-color: #F08080;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+h1 {
+  margin-top: 5px;
+  font-family: Helvetica;
+}
+h2 {
+  margin-top: 10px;
+  font-family: Helvetica;
+  text-align: center;
+  font-size: 2rem;
+}
+#input-container {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: center;
+}
+input {
+  height: 30px;
+  font-size: 1.2rem;
+}
+main {
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 400px;
+  background-color: #FFF0F5;
+}
+#pokemon-container {
+  margin-top: 10px;
+}
+#name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  font-family: Helvetica;
+  margin-left: 5px;
+}
+#pokemon-name {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+#sprite {
+  width: 400px;
+  height: auto;
+}
