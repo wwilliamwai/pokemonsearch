@@ -5,7 +5,7 @@ const pokemonName = document.getElementById("pokemon-name");
 const pokemonId = document.getElementById("pokemon-id");
 const weight = document.getElementById("weight");
 const height = document.getElementById("height");
-const types = document.getElementById("types");
+const types = document.getElementById("types-container");
 
 const stats = ["hp", "attack", "defense", "special-attack", "special-defense", "speed"];
 const getAllStatCells = () => stats.map((stat) => document.getElementById(`${stat}`));
@@ -44,7 +44,7 @@ const updatePokemonInfo = (pokemonInfo) => {
   pokemonContainer.appendChild(img);
   const pokemonTypes = pokemonInfo.types;
   pokemonTypes.forEach((type) => {
-    types.innerHTML += `<p>${type.type.name.toUpperCase()}</p>`;
+    types.innerHTML += `<p class="types">${type.type.name.toUpperCase()}</p>`;
   });
 };
 const updatePokemonStats = (pokemonInfo) => {
@@ -97,4 +97,11 @@ searchBtn.addEventListener("click", () => {
   resetPokemon();
   updatePokemon();
 }); 
+searchInput.addEventListener("keydown", (event) => {
+  if (event.key === 'Enter') {
+  resetPokemon();
+  updatePokemon();
+  }
+}); 
 searchInput.addEventListener("change", resetPokemon);
+
