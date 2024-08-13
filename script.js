@@ -66,7 +66,6 @@ const resetPokemon = () => {
   statCells.forEach((cell) => cell.textContent = "");
 };
 const updatePokemon = async () => {
-  searchBtn.disabled = true;
   console.log("running");
   const input = searchInput.value.toLowerCase();
   await fetchPokemonList()
@@ -94,13 +93,16 @@ const updatePokemon = async () => {
     });
 };
 searchBtn.addEventListener("click", () => {
+  searchBtn.disabled = true;
   resetPokemon();
   updatePokemon();
 }); 
 searchInput.addEventListener("keydown", (event) => {
   if (event.key === 'Enter' && searchBtn.disabled === false) {
   resetPokemon();
+  searchBtn.disabled = true;
   updatePokemon();
   }
 }); 
 searchInput.addEventListener("change", resetPokemon);
+
