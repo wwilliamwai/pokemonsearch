@@ -35,8 +35,8 @@ const fetchPokemonInfo = async (targetPokemon) => {
 const updatePokemonInfo = (pokemonInfo) => {
   pokemonName.textContent = `${pokemonInfo.name.toUpperCase()}`;
   pokemonId.textContent = `#${pokemonInfo.id}`;
-  weight.textContent = `Weight: ${pokemonInfo.weight}`;
-  height.textContent = `Height: ${pokemonInfo.height}`;
+  weight.textContent = `Weight (kg): ${pokemonInfo.weight/10}`;
+  height.textContent = `Height (m): ${pokemonInfo.height/10}`;
   const img = document.createElement("img");
   img.id = "sprite"
   img.src = pokemonInfo.sprites.front_default;
