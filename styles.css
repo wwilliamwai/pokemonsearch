@@ -95,6 +95,9 @@ tr {
   font-family: Helvetica;
   width: 100%;
 }
+td {
+  ouline: 2px solid black;
+}
 @media (max-width: 500px) {
   h1 {
     font-size: 2rem;
