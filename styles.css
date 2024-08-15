@@ -96,7 +96,10 @@ tr {
   width: 100%;
 }
 td {
-  ouline: 2px solid black;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: Helvetica;
+  outline: 2px solid black;
 }
 @media (max-width: 500px) {
   h1 {
